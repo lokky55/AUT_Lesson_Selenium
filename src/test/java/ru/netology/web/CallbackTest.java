@@ -12,13 +12,13 @@ import java.util.List;
 public class CallbackTest {
     private WebDriver driver;
 
-    @BeforeAll
+    @BeforeAll  // запускается один раз перед всеми тестами
     // делаем метод в котором устанавливаем свойства для драйвера (chrome driver из директории driver/win
     static void setUpAll() {
     System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
     }
 
-    @BeforeEach
+    @BeforeEach  // запускается перед ВСЕМИ тестами каждый раз
     void setUp() {
         driver = new ChromeDriver();  // подключаем браузер
     }
