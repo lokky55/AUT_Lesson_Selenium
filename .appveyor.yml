@@ -16,4 +16,4 @@ install:
   - java -jar app-callback.jar &
 
 build_script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - ./gradlew test  # запускаем тест, флаг --info позволяет выводить больше информации
